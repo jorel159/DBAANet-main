@@ -202,8 +202,6 @@ if __name__ == '__main__':
                         level=logging.INFO, filemode='a', datefmt='%Y-%m-%d %I:%M:%S %p')
 
     # ---- build models ----
-    #torch.cuda.set_device(2)  # set your gpu device
-    #model = PVT_CASCADE()
     model = DBAANet()
     model.cuda()
 	
